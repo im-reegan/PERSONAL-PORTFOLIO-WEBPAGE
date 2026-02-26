@@ -24,7 +24,12 @@ Stylistically, the portfolio uses a modern color palette, clean typography, and 
 
 The portfolio also emphasizes user engagement and accessibility. Texts are clear and concise, headings are appropriately sized, and the site maintains adequate contrast for readability. Links and buttons are large enough to be easily clickable on all devices. Forms, such as the contact section, are straightforward, with input fields and a submission button clearly marked, enabling potential clients or employers to reach out easily.
 
+Overall, this project reflects the developer’s ability to integrate HTML structure, CSS styling, and responsive design principles into a cohesive, professional web presence. It not only showcases the developer’s skills and projects but also demonstrates an understanding of web usability, design aesthetics, and front-end development best practices. By completing this portfolio, the developer has created a practical, visually appealing, and fully responsive tool to present work, skills, and contact information effectively, meeting modern standards of professional web design.
+
 # OUTPUT
 
+<img width="1919" height="982" alt="Image" src="https://github.com/user-attachments/assets/a99ba657-e911-4bae-bc11-2ac949925f9b" />
 
-Overall, this project reflects the developer’s ability to integrate HTML structure, CSS styling, and responsive design principles into a cohesive, professional web presence. It not only showcases the developer’s skills and projects but also demonstrates an understanding of web usability, design aesthetics, and front-end development best practices. By completing this portfolio, the developer has created a practical, visually appealing, and fully responsive tool to present work, skills, and contact information effectively, meeting modern standards of professional web design.
+<img width="1889" height="714" alt="Image" src="https://github.com/user-attachments/assets/2981175d-2d3c-4083-acd2-50d7969f404f" />
+
+<img width="1897" height="981" alt="Image" src="https://github.com/user-attachments/assets/aad6b1f5-91f6-48ba-86dc-0c31feb76582" />
