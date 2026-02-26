@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reegan | Front-End Developer</title>
+  <style>
+    /* RESET */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { line-height: 1.6; background: #f5f6fa; color: #333; }
+
+    /* NAVIGATION */
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #1e1e2f;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    nav .logo { font-size: 1.5rem; font-weight: bold; }
+    nav ul { list-style: none; display: flex; }
+    nav ul li { margin-left: 20px; }
+    nav ul li a { color: #fff; text-decoration: none; font-weight: 500; transition: 0.3s; }
+    nav ul li a:hover { color: #00bcd4; }
+
+    /* HEADER / HERO SECTION */
+    header {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+      background-color: #008394; /* Added background color */
+    }
+    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    header h2 { font-size: 1.5rem; color: #fff; margin-bottom: 1rem; }
+    header p { font-size: 1.1rem; max-width: 600px; }
+
+    /* SECTION TITLES */
+    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+    section h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; position: relative; }
+    section h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #00bcd4;
+      display: block;
+      margin: 8px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ABOUT */
+    #about {
+      background: #fff;
+      border-radius: 10px;
+      padding: 50px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    #about p { text-align:center; font-size:1.1rem; line-height:1.8; }
+
+    /* PROJECTS */
+    #projects {
+      margin-top: 30px;
+    }
+    .projects-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      flex: 1 1 calc(33.333% - 20px);
+      display: flex;
+      flex-direction: column;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-card-content {
+      padding: 20px;
+      flex: 1;
+    }
+    .project-card h3 { margin-bottom: 10px; color: #1e1e2f; }
+    .project-card p { color: #555; font-size: 0.95rem; line-height: 1.4; }
+
+    /* CONTACT */
+    #contact {
+      background: #1e1e2f;
+      color: #fff;
+      border-radius: 12px;
+      padding: 50px 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    #contact form {
+      display:flex;
+      flex-direction:column;
+      max-width:500px;
+      margin:auto;
+    }
+    #contact input, #contact textarea {
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius:8px;
+      border:none;
+      font-size:1rem;
+      outline:none;
+    }
+    #contact textarea { resize:none; }
+    #contact button {
+      padding:15px;
+      background:#00bcd4;
+      border:none;
+      border-radius:8px;
+      font-weight:bold;
+      color:#fff;
+      cursor:pointer;
+      transition:0.3s;
+    }
+    #contact button:hover { background:#0097a7; }
+
+    /* FOOTER */
+    footer {
+      text-align:center;
+      padding:60px 20px 20px 20px;
+      margin-top:40px;
+      background:#1e1e2f;
+      color:#fff;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:992px){
+      .project-card { flex:1 1 calc(50% - 20px); }
+    }
+    @media(max-width:768px){
+      nav ul { flex-direction:column; }
+      nav ul li { margin:10px 0; }
+      header h1 { font-size:2.2rem; }
+      header h2 { font-size:1.2rem; }
+      header p { font-size:1rem; }
+      .project-card { flex:1 1 100%; }
+    }
+    html { scroll-behavior:smooth; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">Reegan</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER / HERO -->
+  <header>
+    <h1>Hi, I'm Reegan</h1>
+    <h2>Front-End Developer</h2>
+    <p>I build professional, interactive, and responsive web applications with clean UI design.</p>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Reegan, a Front-End Developer skilled in HTML, CSS, and JavaScript. I enjoy building interactive web applications and user-friendly interfaces that create great user experiences.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="https://loremflickr.com/400/250/quiz" alt="Quiz Application">
+        <div class="project-card-content">
+          <h3>Interactive Quiz Application</h3>
+          <p>A professional dynamic quiz app with multiple question types and instant feedback.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://loremflickr.com/400/250/chat" alt="Chat App">
+        <div class="project-card-content">
+          <h3>Real-Time Chat App</h3>
+          <p>A sleek chat application interface representing real-time messaging functionality.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://loremflickr.com/400/250/elearning" alt="E-Learning UI">
+        <div class="project-card-content">
+          <h3>E-Learning Platform UI</h3>
+          <p>A clean and modern learning UI concept showcasing educational interaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" value="Reegan" required>
+      <input type="email" placeholder="Your Email" value="reegan9597@gmail.com" required>
+      <input type="text" placeholder="Your Phone" value="9677891606" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2026 Reegan. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
